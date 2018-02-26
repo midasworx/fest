@@ -1,0 +1,9 @@
+@charset "utf-8";
+body{
+	box-sizing:border-box;
+	animation: bgFade 0.3s ease-out;
+	background:url(./images/instructionBg.png), #2765a2;
+	background-repeat:no-repeat;
+}
+
+
