@@ -168,7 +168,7 @@ opacity:1;
     background: url(images/btnStart.png);
     background-repeat: no-repeat;
     background-position: 58px 45px;
-    border: 2px solid #2c679e;
+    border: 2px solid #2765a2;
 }
 
 #greeting.active #startScene2{
@@ -575,7 +575,7 @@ section.exam article.qna h2:before{
 	width:50px;
 	height:4px;
 	margin-bottom:10px;
-	background:#2c679e;
+	background:#2765a2;
 }
 
 section.exam article.qna h2{
@@ -1067,7 +1067,7 @@ section#C9 button.btnNext{
     background: url(images/btnEnd.png);
     background-repeat: no-repeat;
     background-position: 58px 45px;
-    border: 2px solid #2c679e;
+    border: 2px solid #2765a2;
 }
 
 #end.active #backtoStart{
