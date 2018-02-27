@@ -124,12 +124,12 @@
 
 
 		var insightWorx = (function(){
+
             var loadingImg = new Image(); 
-            loadingImg.src = 
+            loadingImg.src = './css/images/loading.GIF';
             loadingImg.onload = function(){
                 image.src = this.src;   
             };
-
 			var questionList;
 			var characterList;
 			var fn = {
@@ -210,7 +210,7 @@
 					
 				},
 				nextStep : function(address, index, $section){
-					var nextPageType, object, number, i, t=[], index;
+					var nextPageType, object, number, i, t=[], index, img;
 				
 					nextPageType = address.replace(/#(\w)\d*/,'$1');
 					number = address.replace(/#\w(\d)/,'$1')-1; //실제 배열에서의 순서
@@ -256,11 +256,12 @@
 
 						t.push('<section id="loading" class="active">');
 						t.push('    <div class="wrap">');
-						t.push('        <img src="./css/images/loading.GIF?'+new Date().getTime()+'" alt="로딩중...">');
+						
 						t.push('    </div>');
 						t.push('</section>');
 
-						$section.closest('section').after($(t.join('')));
+                        var img = $(t.join('')).find('.wrap').append(loadingImg);
+						$section.closest('section').after(img);
 						t=[];
 								
 						object = characterList[number];
