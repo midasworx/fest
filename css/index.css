@@ -615,8 +615,9 @@ section.result:before{
     content: '';
     display: block;
     background: url(images/bgWhiteDots.png);
-    width: 600px;
+    width: 1000px;
     height: 100%;
+    background-repeat: no-repeat;
     position: absolute;
     top: 0px;
     left: 0px;
