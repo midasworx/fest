@@ -288,7 +288,7 @@
 						t.push('	</div>');
 						t.push('</section>');
 
-						$section.closest('section').after($(t.join('')));
+						$('#loading').after($(t.join('')));
 
 						setTimeout(function(){
 							$('section').removeClass('active');
