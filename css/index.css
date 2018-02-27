@@ -927,6 +927,7 @@ section#C9 button.btnNext{
 }
 
 #loading img{
+    display:none;
     margin: 0 auto;
     display: block;
     position: relative;
@@ -949,6 +950,9 @@ section#C9 button.btnNext{
 	width:100%;
 }
 
+#loading.active img{
+    display:block;
+}
 
 #end{
 	padding : 90px;
