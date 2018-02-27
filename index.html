@@ -87,7 +87,7 @@
 				</ul>
 		
 			</article>
-			<button type="button" class="btnNext inverse" id="startExam"></button>
+			<button type="button" class="btnNext" id="startExam" style="bottom: 164px;right: 73px;"></button>
 		</div>
 	</section>
 
@@ -124,6 +124,11 @@
 
 
 		var insightWorx = (function(){
+            var loadingImg = new Image(); 
+            loadingImg.src = 
+            loadingImg.onload = function(){
+                image.src = this.src;   
+            };
 
 			var questionList;
 			var characterList;
@@ -251,7 +256,7 @@
 
 						t.push('<section id="loading" class="active">');
 						t.push('    <div class="wrap">');
-						t.push('        <img src="./css/images/loading.GIF?'+new Date().getTime()+'" alt="로딩중...">');
+						t.push('        <img src="'./css/images/loading.GIF?'+new Date().getTime()'+'" alt="로딩중...">');
 						t.push('    </div>');
 						t.push('</section>');
 
