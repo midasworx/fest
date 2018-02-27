@@ -336,7 +336,7 @@ opacity:1;
     background: #fff;
     right: 0px;
     bottom: 110px;
-    transition:all 0.3s
+    transition:all 0.3s;
     transition-delay: 0.3s;
     opacity: 0;
 }
