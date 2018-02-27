@@ -611,6 +611,14 @@ section.result.active .wrap{
 	width: 100%;
 }
 
+section.result:before{
+    content:'';
+    display:block;
+    background:url(images/bgWhiteDots.png);
+    width:600px;
+    height:100%;
+}
+
 
 blockquote{
     font-family: 'Nanum Brush Script','Noto Sans KR', sans-serif;
