@@ -612,11 +612,14 @@ section.result.active .wrap{
 }
 
 section.result:before{
-    content:'';
-    display:block;
-    background:url(images/bgWhiteDots.png);
-    width:600px;
-    height:100%;
+    content: '';
+    display: block;
+    background: url(images/bgWhiteDots.png);
+    width: 600px;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
 }
 
 
