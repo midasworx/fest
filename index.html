@@ -257,7 +257,8 @@
 						t.push('    </div>');
 						t.push('</section>');
 
-                        var img = $(t.join('')).find('.wrap').append(loadingImg);
+                        var img = $(t.join(''));
+                        img.find('.wrap').append(loadingImg);
 						$section.closest('section').after(img);
 						t=[];
 								
