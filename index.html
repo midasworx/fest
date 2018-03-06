@@ -302,6 +302,10 @@
 			};
 
 			setTimeout(fn.init, 100);
+            
+            return {
+                nextStep : fn.nextStep
+            }
 
 		})();
 				
