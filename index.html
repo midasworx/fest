@@ -99,7 +99,7 @@
 				</p>
 				<p class="introduce">
 					당신의 꿈을 펼칠<br>
-					<strong>취업 성공을</strong>응원합니다.
+					<strong>취업 성공</strong>을 응원합니다.
 				</p>
 				<button type="button" id="backtoStart"></button>
 			</div>
@@ -188,6 +188,11 @@
 						$('section').removeClass('active');
 						$('#end').addClass('active');
 						history.pushState({ data: 'end' }, '', '');
+						setTimeout(function(){
+						    if($('end').hasClass('active')) {
+                                $('#backtoStart').click();
+                            }
+						}, 20000);
 					});
 
 					$(document).on('click', '#backtoStart', function(e){
