@@ -20,7 +20,7 @@
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 		<link rel="apple-touch-icon" href="sam.jpg" /> <!--72x72-->
-		<meta name = "viewport" content = "user-scalable=no, width=device-width">
+		<meta name = "viewport" content = "user-scalable=no, width=1366">
 		<script
 		  src="https://code.jquery.com/jquery-2.2.4.js"
 		  integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
@@ -68,8 +68,6 @@
 					<li>각 상황 질문을 읽고 <strong>마음이 더 끌리는 대답</strong>을 선택해 주세요.</li>
 					<li>선택에 따라 이어지는 <strong>질문은 다를 수 있습니다!</strong></li>
 				</ol>
-
-				<div class="inst">우측 하단의 <img width="50" alt="next" src="./css/images/btnNext.png" style="vertical-align:middle;margin-left:5px;margin-right:5px;"> 를 누르시면 바로 <strong>테스트가 시작</strong>됩니다.</div>
 			</article>
 
 			<article class="qna">
@@ -189,10 +187,10 @@
 						$('#end').addClass('active');
 						history.pushState({ data: 'end' }, '', '');
 						setTimeout(function(){
-						    if($('end').hasClass('active')) {
+						    if($('#end').hasClass('active')) {
                                 $('#backtoStart').click();
                             }
-						}, 20000);
+						}, 10000);
 					});
 
 					$(document).on('click', '#backtoStart', function(e){
@@ -296,6 +294,12 @@
 							$('section').removeClass('active');
 							$('#'+ nextPageType+(number+1)).addClass('active');
 						},4200);
+
+						setTimeout(function(){
+						    if($('.result').hasClass('active')) {
+                                $('#backtoStart').click();
+                            }
+						}, 90000);
 
 					}
 					
